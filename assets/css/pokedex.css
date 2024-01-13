@@ -1,0 +1,146 @@
+.pokemons {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.normal {
+  background-color: #a6a877;
+}
+
+.grass {
+  background-color: #77c850;
+}
+
+.fire {
+  background-color: #ee7f30;
+}
+
+.water {
+  background-color: #678fee;
+}
+
+.electric {
+  background-color: #f7cf2e;
+}
+
+.ice {
+  background-color: #98d5d7;
+}
+
+.ground {
+  background-color: #dfbf69;
+}
+
+.flying {
+  background-color: #a98ff0;
+}
+
+.poison {
+  background-color: #a040a0;
+}
+
+.fighting {
+  background-color: #bf3029;
+}
+
+.psychic {
+  background-color: #f65687;
+}
+
+.dark {
+  background-color: #725847;
+}
+
+.rock {
+  background-color: #b8a137;
+}
+
+.bug {
+  background-color: #a8b720;
+}
+
+.ghost {
+  background-color: #6e5896;
+}
+
+.steel {
+  background-color: #b9b7cf;
+}
+
+.dragon {
+  background-color: #6f38f6;
+}
+
+.fairy {
+  background-color: #f9aec7;
+}
+
+.pokemonListCard {
+  display: grid;
+  list-style: none;
+}
+
+.pokemonCard {
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+  margin: .5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #55d3b8;
+  color: #FFF;
+}
+
+.pokemonNumber {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+
+  font-size: 1rem;
+  font-weight: bold;
+  color: #303030;
+}
+
+.contentCard {
+  display: flex;
+  justify-content: space-between;
+}
+.pokemonName {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.listNamePokemon li {
+  font-weight: 500;
+  list-style: none;
+  background-color: #20ad96;
+  padding: .3rem;
+  margin: .5rem .5rem .5rem 0rem;
+  border-radius: 1rem;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
+@media screen and (min-width: 380px) {
+  .pokemonListCard {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .pokemonListCard {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pokemonListCard {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
