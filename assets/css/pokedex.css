@@ -78,11 +78,6 @@
   background-color: #f9aec7;
 }
 
-.pokemonListCard {
-  display: grid;
-  list-style: none;
-}
-
 .pokemonCard {
   display: flex;
   flex-direction: column;
@@ -90,7 +85,6 @@
   margin: .5rem;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: #55d3b8;
   color: #FFF;
 }
 
@@ -123,8 +117,8 @@
 }
 
 img {
-  width: 5rem;
-  height: 5rem;
+  max-width: 100%;
+  height: 70px;
 }
 
 @media screen and (min-width: 380px) {
