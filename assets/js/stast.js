@@ -7,7 +7,6 @@ const typeUrl = urlParams.get("type")
 
 
 function convertCardDetails(pokemon) {
- console.log('object :>> ', pokemon);
   return `
     <header class="headerDetails ${typeUrl}">
     <span class="number">#${pokemon.id}</span>
