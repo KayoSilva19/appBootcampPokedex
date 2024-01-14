@@ -8,12 +8,20 @@
 }
 
 body {
-  background-color: #f6f8fc;
+  background-color: #f1f1f7;
 }
 
 .content {
   width: 100vw;
   height: 100vh;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.contentDetails {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
   padding: 1rem;
   background-color: #fff;
 }
@@ -24,6 +32,13 @@ body {
       height: auto;
       margin: 1rem auto;
       border-radius: 1rem;
+  }
+  .contentDetails {
+      max-width: 992px;
+      height: auto;
+      margin: 1rem auto;
+      border-radius: 1rem;
+      position: relative;
   }
 }
 

@@ -1,0 +1,80 @@
+.buttonBack {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border-radius: .3rem;
+  border: none;
+  cursor: pointer;
+  padding: .7rem;
+
+  color: #FFF;
+  background-color: #e05735;
+
+  transition: all .2s ease-in-out;
+}
+
+.buttonBack:hover {
+  background-color: #a04028;
+}
+
+.cardDetails {
+  margin-top: 3rem;
+  border-radius: .7rem;
+  width: 100%;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+
+.headerDetails  {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.headerDetails span {
+  font-size: 1.2rem;
+  font-weight: 400;
+ 
+  color: #FFF;
+}
+
+.headerDetails span {
+  text-transform: capitalize;
+}
+
+.headerDetails img {
+  max-width: 100%;
+  height: 6rem;
+}
+
+.headerDetails .pokeName {
+  font-size: 1.7rem;  
+}
+
+.contentDetailsCard {
+  padding: 1rem;
+}
+
+.contentDetailsCard h3 {
+  color: #2c2c2c;
+  font-size: 1.8rem;
+}
+
+.orderAbility {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.orderAbility li{
+  font-size: 1.5rem;
+  color: #2c2c2c;
+}
+
+@media screen and (min-width: 992px) {
+  .cardDetails {
+    width: 992px
+  }
+}

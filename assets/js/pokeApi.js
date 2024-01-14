@@ -1,9 +1,9 @@
 const poKeApi = {}
 
 function convertPokeApiDetailToPokemon(pokeDetail) {
- const pokemon = new Pokemon()
- pokemon.name = pokeDetail.name
- pokemon.number = pokeDetail.id
+  const pokemon = new Pokemon()
+  pokemon.name = pokeDetail.name
+  pokemon.number = pokeDetail.id
 
  const types = pokeDetail.types.map((typeSlot => typeSlot.type.name))
  const [typePrincipal] = types
@@ -33,4 +33,34 @@ poKeApi.getPokemons = (offSet = 0, limit = 5) => {
       .then((pokemonsDetails) => pokemonsDetails)
       .catch((err) => console.log('ERROR :>> ', err))
   )
+}
+
+poKeApi.getPokeBall = (item) => {
+  const url = `https://pokeapi.co/api/v2/item/${item}`
+
+  return (
+    fetch(url)
+    .then((response) => response.json())
+    .then((pokeBallDetails) => pokeBallDetails.sprites.default)
+  )
+}
+
+poKeApi.getPokemonDetailsCustom = (number) => {
+  const url = `https://pokeapi.co/api/v2/pokemon/${number}`
+
+  return (
+    fetch(url)
+    .then((response) => response.json())
+    .then((pokeBallDetails) => pokeBallDetails)
+  )
+}
+poKeApi.getPokeBall = (item) => {
+  const url = `https://pokeapi.co/api/v2/item/${item}`
+
+  return (
+    fetch(url)
+    .then((response) => response.json())
+    .then((pokeBallDetails) => pokeBallDetails.sprites.default)
+  )
+
 }
